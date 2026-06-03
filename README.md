@@ -158,7 +158,7 @@ Image rules enforced by the Markdown converter:
 
 - **Evan Pardon** — site scaffold, *Soccer in England* page, political landscape, economic structures, fan culture and traditions, media representation, draft/transfer milestones.
 - **Jared Ekstrom** — historical development, founding and early history, legendary or influential players, stadium history and significance.
-- **SavorySheikah** — World Cup connections, fan base and supporter culture, political or social events connected to the team, contributions to national or global soccer culture, regional and ethnic identities.
+- **Lilliana Halliburton** — World Cup connections, fan base and supporter culture, political or social events connected to the team, contributions to national or global soccer culture, regional and ethnic identities.
 
 ---
 
