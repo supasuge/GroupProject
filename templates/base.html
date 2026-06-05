@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ page.description or site_description }}">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#0d0d0f">
+  <meta name="theme-color" content="#0c0c0e">
   <link rel="stylesheet" href="{{ asset_url('mu.css') }}">
 </head>
 <body class="page-{{ page.slug }}">
   <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <div class="grain" aria-hidden="true"></div>
 
   <header class="site-header" role="banner">
     <nav class="nav container" aria-label="Primary navigation">
@@ -21,8 +19,8 @@
           <span class="brand-mark-inner">MU</span>
         </span>
         <span class="brand-wordmark">
-          <span class="brand-eyebrow">Exhibit</span>
-          <span class="brand-text">Manchester&nbsp;United Project</span>
+          <span class="brand-eyebrow">Soccer Culture Project</span>
+          <span class="brand-text">Manchester&nbsp;United</span>
         </span>
       </a>
 
@@ -33,7 +31,6 @@
              class="nav-link{% if slug == page.slug %} is-active{% endif %}"
              href="{{ page_url(slug) }}"
              {% if slug == page.slug %}aria-current="page"{% endif %}>
-            <span class="nav-link-index">{{ '%02d'|format(loop.index) }}</span>
             <span class="nav-link-label">{{ nav_labels[slug] }}</span>
           </a>
         {% endfor %}
@@ -47,9 +44,7 @@
         <div class="hero-copy">
           <p class="eyebrow">
             <span class="eyebrow-rule" aria-hidden="true"></span>
-            Exhibit&nbsp;{{ '%02d'|format(page.index) }}
-            <span class="eyebrow-divider" aria-hidden="true">/</span>
-            Soccer&nbsp;Culture&nbsp;Project
+            {{ nav_labels[page.slug] }}
           </p>
           <h1 id="page-title" class="hero-title">{{ page.title }}</h1>
           {% if page.description %}
@@ -59,30 +54,22 @@
             <span>Oakland&nbsp;University</span>
             <span aria-hidden="true">·</span>
             <span>Social Movements &amp; Sports</span>
-            <span aria-hidden="true">·</span>
-            <span>{{ pages|length }}&nbsp;sections</span>
           </p>
         </div>
         <aside class="hero-card" aria-label="Project focus">
-          <div class="ticket">
-            <div class="ticket-row ticket-row-top">
-              <span class="ticket-tag">Match&nbsp;Programme</span>
-              <span class="ticket-no">№&nbsp;{{ '%03d'|format(page.index) }}</span>
-            </div>
-            <div class="ticket-divider" aria-hidden="true"></div>
-            <div class="ticket-fixture">
-              <span class="ticket-club ticket-home">England</span>
-              <span class="ticket-versus" aria-hidden="true">×</span>
-              <span class="ticket-club ticket-away">Man&nbsp;United</span>
-            </div>
-            <div class="ticket-meta">
-              <span>History</span>
-              <span aria-hidden="true">·</span>
-              <span>Culture</span>
-              <span aria-hidden="true">·</span>
-              <span>Supporters</span>
-            </div>
-            <div class="ticket-stripes" aria-hidden="true"></div>
+          <div class="focus-card">
+            <p class="focus-eyebrow">Focus</p>
+            <p class="focus-pairing">
+              <span class="focus-team focus-home">England</span>
+              <span class="focus-versus" aria-hidden="true">&times;</span>
+              <span class="focus-team focus-away">Man&nbsp;United</span>
+            </p>
+            <div class="focus-divider" aria-hidden="true"></div>
+            <ul class="focus-tags">
+              <li>History</li>
+              <li>Culture</li>
+              <li>Supporters</li>
+            </ul>
           </div>
         </aside>
       </div>
@@ -97,13 +84,12 @@
 
       {% if page.sections %}
         <aside class="toc" aria-labelledby="toc-heading">
-          <p class="toc-eyebrow" aria-hidden="true">Guide</p>
+          <p class="toc-eyebrow" aria-hidden="true">Contents</p>
           <h2 id="toc-heading" class="toc-heading">On this page</h2>
           <ol class="toc-list">
             {% for section in page.sections %}
               <li class="toc-item toc-level-{{ section.level }}">
                 <a href="#{{ section.id }}">
-                  <span class="toc-index">{{ '%02d'|format(loop.index) }}</span>
                   <span class="toc-label">{{ section.title }}</span>
                 </a>
               </li>
@@ -118,14 +104,14 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="footer-mark" aria-hidden="true">MU</span>
-        <span>Soccer Culture Project — Manchester United Theme</span>
+        <span>Soccer Culture Project — Manchester United</span>
       </div>
       <nav class="footer-links" aria-label="Footer">
         <a href="{{ page_url('home') }}">Home</a>
         <a href="{{ page_url('sources') }}">Sources</a>
       </nav>
       <p class="footer-credits">
-        Written by Evan&nbsp;Pardon, Jared&nbsp;Ekstrom, and SavorySheikah.
+        By Evan&nbsp;Pardon, Jared&nbsp;Ekstrom, and SavorySheikah.
       </p>
     </div>
   </footer>

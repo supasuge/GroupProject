@@ -1,0 +1,29 @@
+# Local container preview for the Manchester United Soccer Culture Project.
+#
+#   docker compose up --build      # build + serve at http://localhost:8000
+#   docker compose down            # stop
+#
+# Redundant volume handling, two complementary layers:
+#   1. A bind mount of ./content lets you edit Markdown on the host; the
+#      entrypoint regenerates the site on container start.
+#   2. A named volume (site_dist) persists the generated output across
+#      restarts and demonstrates the "empty volume gets repopulated" path.
+services:
+  site:
+    build:
+      context: .
+      target: runtime
+    image: manutd-site:local
+    ports:
+      - "8000:8000"
+    environment:
+      SITE_PORT: "8000"
+    volumes:
+      # Layer 1 — editable source content (host bind mount, read-only).
+      - ./content:/app/content:ro
+      # Layer 2 — generated output persisted in a named volume.
+      - site_dist:/app/dist
+    restart: unless-stopped
+
+volumes:
+  site_dist:

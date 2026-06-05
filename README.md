@@ -15,14 +15,17 @@ The project is intentionally a four-page content site rather than an application
 | `site_config.py` | Site metadata, page order, navigation labels, page descriptions. |
 | `tiny_markdown.py` | Defensive, allow-listed Markdown → HTML converter. Returns rendered HTML, a list of headings (for the table of contents), and the page title extracted from the first `#` heading. |
 | `app.py` | Flask preview server. Loads and parses every Markdown page once at startup; serves them via extensionless routes. |
-| `build_static.py` | Static site builder. Wipes and rebuilds `dist/`, copies `static/` into it, and renders one HTML file per page using the same Jinja template Flask uses. |
+| `build_static.py` | Static site builder. Clears and rebuilds `dist/`, copies `static/` into it, and renders one HTML file per page using the same Jinja template Flask uses. |
 | `templates/base.html` | Single page template, used by both `app.py` and `build_static.py`. |
 | `static/mu.css` | All site styling — mobile-first, no JS, no frameworks. |
 | `static/images/` | Local images. Every image used in the site must be cited in `content/sources.md`. |
 | `content/*.md` | Source content for every page on the site. |
 | `requirements.txt` | Python dependencies: Flask and MarkupSafe. |
-| `Dockerfile` | Optional container that proves the static build runs cleanly on a pinned Ubuntu LTS. |
-| `.github/workflows/pages.yml` | GitHub Actions workflow that builds and deploys `dist/` to GitHub Pages. |
+| `Dockerfile` | Multi-stage container (pinned Ubuntu LTS) that builds **and serves** the static site, with redundant volume handling. |
+| `docker-entrypoint.sh` | Container entrypoint: regenerates `dist/` on start (repopulating mounted volumes), falls back to the baked build, then serves it. |
+| `docker-compose.yml` | One-command local container preview with bind-mounted content and a persisted output volume. |
+| `.github/workflows/pages.yml` | GitHub Actions workflow that builds and deploys `dist/` to GitHub Pages on merges to `main`. |
+| `.github/workflows/ci.yml` | GitHub Actions workflow that rebuilds and verifies the site (and the container image) on every push and pull request. |
 | `.gitignore` | Ignores `dist/`, `.venv/`, caches, and OS junk. |
 
 ---
@@ -102,13 +105,54 @@ Then open <http://localhost:8000>. This is the closest local equivalent to what 
 
 ---
 
-## Deploying to GitHub Pages
+## Running it in a container
+
+The `Dockerfile` is a multi-stage build that not only proves the static build runs on a pinned Ubuntu LTS, but also **serves** the finished site. Volume handling is deliberately redundant — both the editable Markdown (`/app/content`) and the generated output (`/app/dist`) are declared as volumes, and the entrypoint regenerates `dist/` on every start:
+
+- Mount nothing → it serves the build baked into the image.
+- Bind-mount your edited `content/` → it regenerates `dist/` from your edits on start.
+- Mount an **empty** named volume over `dist/` → the entrypoint repopulates it.
+- If a regeneration ever fails → it falls back to whatever build is already present.
+
+Quickest path (Docker Compose):
+
+```shell
+docker compose up --build
+# open http://localhost:8000
+docker compose down
+```
+
+Or with plain Docker:
+
+```shell
+docker build --target runtime -t manutd-site .
+docker run --rm -p 8000:8000 manutd-site
+```
+
+To export just the static files (for example, into an `out/` folder) without serving:
+
+```shell
+docker build --target static-artifact -o type=local,dest=out .
+```
+
+---
+
+## Continuous integration and deployment
+
+Two GitHub Actions workflows keep the published site current:
+
+| Workflow | Trigger | What it does |
+|---|---|---|
+| `.github/workflows/ci.yml` | every push and pull request | Byte-compiles the sources, rebuilds the static site, verifies every expected page and `mu.css` exist, uploads the build as an artifact, and builds + smoke-tests the container image. This is the always-on guard that catches breakage before and after it reaches the live site. |
+| `.github/workflows/pages.yml` | merges/pushes to `main` (and manual dispatch) | Rebuilds `dist/` and deploys it to GitHub Pages, so the public site updates automatically every time changes land on `main`. |
+
+To enable deployment:
 
 1. Push the repository to GitHub.
 2. In the repository **Settings → Pages**, set the publishing source to **GitHub Actions**.
-3. The `pages.yml` workflow runs automatically on every push to `main` (and can also be triggered manually). It installs dependencies, runs `build_static.py`, uploads `dist/` as a Pages artifact, and deploys it.
+3. Push to (or merge into) `main`. `pages.yml` runs automatically, builds the site, and deploys it.
 
-Do **not** commit the `dist/` folder. The workflow rebuilds it on every deploy and `.gitignore` already excludes it.
+Do **not** commit the `dist/` folder. The workflows rebuild it on every run and `.gitignore` already excludes it.
 
 ---
 

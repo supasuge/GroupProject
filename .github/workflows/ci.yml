@@ -1,0 +1,98 @@
+name: Build and verify site
+
+# Runs on every push and pull request so the generated site is rebuilt and
+# verified each time changes are pushed or merged. The Pages deploy lives in
+# pages.yml and runs on merges to main; this workflow is the always-on guard
+# that catches build breakage before (and after) it reaches the live site.
+#
+# Only trusted GitHub-provided context is used; no untrusted input is
+# interpolated into any `run:` step.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "ci-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Render static site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Byte-compile sources
+        run: python -m compileall app.py build_static.py site_config.py tiny_markdown.py
+
+      - name: Build static site
+        run: python build_static.py
+
+      - name: Verify expected pages exist
+        run: |
+          set -euo pipefail
+          for page in index.html country-england.html team-manchester-united.html sources.html; do
+            test -f "dist/$page" || { echo "::error::missing dist/$page"; exit 1; }
+          done
+          test -f dist/static/mu.css || { echo "::error::missing dist/static/mu.css"; exit 1; }
+          echo "All expected pages and assets are present."
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-build-${{ github.sha }}
+          path: dist
+          retention-days: 14
+
+  docker:
+    name: Verify container build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build runtime image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          target: runtime
+          push: false
+          load: true
+          tags: manutd-site:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Smoke-test the container
+        run: |
+          set -euo pipefail
+          docker run -d --name manutd-site -p 8000:8000 manutd-site:ci
+          for i in $(seq 1 20); do
+            if curl -fsS http://localhost:8000/index.html >/dev/null; then
+              echo "Container served index.html successfully."
+              docker rm -f manutd-site
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "::error::container did not serve index.html in time"
+          docker logs manutd-site || true
+          docker rm -f manutd-site
+          exit 1

@@ -64,9 +64,18 @@ def _load_pages() -> dict[str, Page]:
 
 
 def _reset_dist() -> None:
-    if DIST_ROOT.exists():
-        shutil.rmtree(DIST_ROOT)
-    DIST_ROOT.mkdir(parents=True)
+    """Empty ``dist/`` without removing the directory itself.
+
+    Clearing the contents (rather than ``rmtree`` on the directory) keeps the
+    build working when ``dist/`` is a mounted Docker volume, whose mount point
+    cannot be removed (``OSError: Device or resource busy``).
+    """
+    DIST_ROOT.mkdir(parents=True, exist_ok=True)
+    for entry in DIST_ROOT.iterdir():
+        if entry.is_dir() and not entry.is_symlink():
+            shutil.rmtree(entry)
+        else:
+            entry.unlink()
 
 
 def _copy_static() -> None:
