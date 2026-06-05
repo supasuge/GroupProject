@@ -40,6 +40,15 @@ jobs:
       - name: Byte-compile sources
         run: python -m compileall app.py build_static.py site_config.py tiny_markdown.py
 
+      - name: Reject unresolved merge conflicts
+        run: |
+          set -euo pipefail
+          if grep -RInE '^(<<<<<<< .+|=======$|>>>>>>> .+)' \
+            .github content static templates app.py build_static.py site_config.py tiny_markdown.py README.md; then
+            echo "::error::unresolved merge conflict markers found"
+            exit 1
+          fi
+
       - name: Build static site
         run: python build_static.py
 
@@ -50,6 +59,10 @@ jobs:
             test -f "dist/$page" || { echo "::error::missing dist/$page"; exit 1; }
           done
           test -f dist/static/mu.css || { echo "::error::missing dist/static/mu.css"; exit 1; }
+          if grep -RInE '^(<<<<<<< .+|=======$|>>>>>>> .+)' dist; then
+            echo "::error::generated site contains unresolved merge conflict markers"
+            exit 1
+          fi
           echo "All expected pages and assets are present."
 
       - name: Upload build artifact

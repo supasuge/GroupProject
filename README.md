@@ -154,6 +154,19 @@ To enable deployment:
 
 Do **not** commit the `dist/` folder. The workflows rebuild it on every run and `.gitignore` already excludes it.
 
+### How live updates work
+
+GitHub Pages will not run `app.py` or update from the local `dist/` folder on your laptop. The live site updates only after a commit is pushed to `main` and the **Deploy static site to GitHub Pages** workflow finishes successfully. That workflow deletes and rebuilds `dist/` inside the GitHub runner, uploads the fresh `dist/` folder as a Pages artifact, and `actions/deploy-pages` replaces the previously published artifact.
+
+If the site does not change after pushing:
+
+- Confirm **Settings → Pages → Source** is set to **GitHub Actions**, not `main`, `/docs`, or `gh-pages`.
+- Open the latest **Actions** run for `pages.yml` and check whether it failed before the deploy step.
+- Make sure the change was committed and pushed to `main`; local edits and local `dist/` output are not published.
+- Wait a minute or two after a successful deploy. GitHub Pages can take a short time to serve the newest artifact.
+
+An older deploy-branch model is also possible, but it is not the recommended setup for this project. If you choose it, create a `gh-pages` branch that contains only generated static files, change **Settings → Pages → Source** to deploy from `gh-pages` `/`, and replace `pages.yml` with a workflow that builds `dist/` then pushes the contents of `dist/` to `gh-pages` using a Pages action such as `peaceiris/actions-gh-pages`. Do not use both models at the same time.
+
 ---
 
 ## Editing Markdown content

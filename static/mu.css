@@ -124,7 +124,7 @@ a:hover { color: #fff2c4; }
 .focus-pairing {
   font-family: var(--font-display);
   font-weight: 500;
-  letter-spacing:  -0.01em;
+  letter-spacing: -0.01em;
   text-wrap: wrap;
 }
 
