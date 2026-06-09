@@ -1,0 +1,102 @@
+/* =========================================================================
+   Patch: focus card width + generated site assets
+   Paste near the existing Hero / Focus card section, replacing the old focus-card
+   and desktop hero media-query rules.
+   ========================================================================= */
+
+.hero-card {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.focus-card {
+  width: min(100%, 42rem); /* was max-width: 36rem; gives heading/teams breathing room */
+  padding: clamp(1.35rem, 2.3vw, 1.85rem) clamp(1.4rem, 2.6vw, 2rem);
+  background: linear-gradient(165deg, var(--mu-surface-2), var(--mu-surface));
+  border: 1px solid var(--mu-border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.focus-pairing {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(0.6rem, 1.4vw, 1rem);
+  font-size: clamp(1.35rem, 1.05rem + 1.25vw, 1.95rem);
+  line-height: 1.05;
+}
+
+.focus-team {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.focus-away {
+  color: var(--mu-gold-soft);
+  text-align: right;
+}
+
+.focus-versus {
+  color: var(--mu-red-bright);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+@media (min-width: 980px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1.22fr) minmax(24rem, 0.78fr);
+  }
+
+  .hero-card {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1180px) {
+  .focus-card {
+    width: min(100%, 44rem);
+  }
+}
+
+@media (max-width: 520px) {
+  .focus-pairing {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .focus-versus {
+    justify-self: start;
+  }
+
+  .focus-away {
+    text-align: left;
+  }
+}
+
+/* Asset-backed brand mark. Works with the generated SVG in /assets/generated/. */
+.brand-mark,
+.footer-mark {
+  background-image: url("generated/site-mark.svg");
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+.brand-mark-inner,
+.footer-mark {
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+/* Optional photo treatment for markdown/generated figures. */
+.content-figure.is-hero-photo img,
+.hero-photo {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}

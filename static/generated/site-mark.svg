@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Soccer Culture Project MU mark</title>
+  <desc id="desc">Original red and gold shield mark with MU initials, made for an academic Manchester United culture project. This is not the official Manchester United crest.</desc>
+  <defs>
+    <linearGradient id="shield" x1="34" y1="24" x2="222" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2253f"/>
+      <stop offset="0.55" stop-color="#c8102e"/>
+      <stop offset="1" stop-color="#2a0509"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="#0c0c0e"/>
+  <path filter="url(#shadow)" d="M128 22c34 21 70 29 100 31v67c0 58-36 95-100 116C64 215 28 178 28 120V53c30-2 66-10 100-31Z" fill="url(#shield)" stroke="#ffd86b" stroke-width="7"/>
+  <path d="M64 77h128" stroke="#ffd86b" stroke-width="8" stroke-linecap="round" opacity="0.82"/>
+  <path d="M64 181h128" stroke="#ffd86b" stroke-width="8" stroke-linecap="round" opacity="0.82"/>
+  <circle cx="128" cy="128" r="37" fill="none" stroke="rgba(255,216,107,0.38)" stroke-width="5"/>
+  <path d="M128 91v74" stroke="rgba(255,216,107,0.38)" stroke-width="4" stroke-linecap="round"/>
+  <text x="128" y="148" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" letter-spacing="-5" fill="#f4f4f6">MU</text>
+  <text x="128" y="199" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" letter-spacing="3" fill="#ffd86b">CULTURE</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">Soccer Culture Project — Manchester United</title>
+  <desc id="desc">Original academic project wordmark with a custom MU shield. This is not the official Manchester United crest.</desc>
+  <rect width="760" height="180" rx="30" fill="#0c0c0e"/>
+  <g transform="translate(28 22) scale(.53)">
+    <path d="M128 22c34 21 70 29 100 31v67c0 58-36 95-100 116C64 215 28 178 28 120V53c30-2 66-10 100-31Z" fill="url(#shield)" stroke="#ffd86b" stroke-width="7"/>
+    <path d="M64 77h128" stroke="#ffd86b" stroke-width="8" stroke-linecap="round" opacity="0.82"/>
+    <path d="M64 181h128" stroke="#ffd86b" stroke-width="8" stroke-linecap="round" opacity="0.82"/>
+    <circle cx="128" cy="128" r="37" fill="none" stroke="rgba(255,216,107,0.38)" stroke-width="5"/>
+    <path d="M128 91v74" stroke="rgba(255,216,107,0.38)" stroke-width="4" stroke-linecap="round"/>
+    <text x="128" y="148" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" letter-spacing="-5" fill="#f4f4f6">MU</text>
+  </g>
+  <defs>
+    <linearGradient id="shield" x1="34" y1="24" x2="222" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2253f"/>
+      <stop offset="0.55" stop-color="#c8102e"/>
+      <stop offset="1" stop-color="#2a0509"/>
+    </linearGradient>
+  </defs>
+  <text x="180" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="700" letter-spacing="5" fill="#ffd86b">SOCCER CULTURE PROJECT</text>
+  <text x="180" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" fill="#f4f4f6">Manchester United</text>
+  <text x="182" y="150" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="18" fill="#c5c5cc">History · Culture · Supporters</text>
+</svg>

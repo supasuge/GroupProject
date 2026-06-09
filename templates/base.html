@@ -7,6 +7,18 @@
   <meta name="description" content="{{ page.description or site_description }}">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0c0c0e">
+
+  <link rel="icon" href="{{ asset_url('generated/favicon.svg') }}" type="image/svg+xml">
+  <link rel="icon" href="{{ asset_url('generated/favicon.ico') }}" sizes="any">
+  <link rel="apple-touch-icon" href="{{ asset_url('generated/apple-touch-icon.png') }}">
+
+  <meta property="og:title" content="{{ page.title }} | {{ site_title }}">
+  <meta property="og:description" content="{{ page.description or site_description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ asset_url('generated/social-card.png') }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ asset_url('generated/social-card.png') }}">
+
   <link rel="stylesheet" href="{{ asset_url('mu.css') }}">
 </head>
 <body class="page-{{ page.slug }}">
