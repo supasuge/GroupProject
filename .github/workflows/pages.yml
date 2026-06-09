@@ -1,11 +1,5 @@
 name: Deploy static site to GitHub Pages
 
-# Triggered on pushes to main and on demand. The workflow uses only
-# trusted GitHub-provided values (steps.deployment.outputs.page_url); no
-# untrusted user input is interpolated into any `run:` step, so the
-# command-injection patterns called out in
-# https://github.blog/security/vulnerability-research/how-to-catch-github-actions-workflow-injections-before-attackers-do/
-# do not apply here.
 on:
   push:
     branches: ["main"]
