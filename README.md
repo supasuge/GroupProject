@@ -1,5 +1,9 @@
 # Manchester United and Soccer Culture in England
 
+**URL**
+
+> [supasuge.github.io/GroupProject](https://supasuge.github.io/GroupProject/)
+
 A small, deliberately simple, statically-rendered website built for an Oakland University class project on social movements and sports. The site explores soccer culture in England and the history of Manchester United.
 
 The project is intentionally a four-page content site rather than an application. Content lives in Markdown files. A tiny custom Markdown converter renders those files into HTML using a single Jinja template. A short Flask app serves the same template locally for preview, and a separate script builds a static `dist/` folder that can be published directly to GitHub Pages.
