@@ -482,7 +482,7 @@ em { color: var(--mu-gold-soft); font-style: italic; }
 .page-card-inner > .md-h2:first-of-type { margin-top: 0.25rem; }
 
 .md-h3 {
-  margin: 2rem 0 0.5rem;
+letter-spacing: normal;  margin: 2rem 0 0.5rem;
   font-size: clamp(1.15rem, 1.05rem + 0.5vw, 1.4rem);
   color: var(--mu-gold-soft);
 }
