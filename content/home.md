@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This site is a small digital exhibit produced for a class project at Oakland University. It looks at two intertwined subjects: the broader culture of soccer (football) in England, and the history, identity, and global reach of Manchester United Football Club. The two halves are meant to be read together — Manchester United is impossible to understand without the country and city that shaped it, and English soccer is hard to discuss without a club like United at the table.
+This site is a small digital exhibit produced for a class project for Social Movements & Sports with Professor Michel at Oakland University. This project explores the relationships between intertwined subjects: the broader culture of soccer (football) in England, and the history, identity, and global reach of Manchester United Football Club. The two halves are meant to be read together: Manchester United is impossible to understand without the country and city that shaped it, and English soccer is hard to discuss without a club like United at the table.
 
 We treat the topic the way a museum exhibit would: short, focused sections, careful sourcing, and a layout that invites browsing as much as reading.
 
