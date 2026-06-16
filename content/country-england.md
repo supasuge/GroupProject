@@ -4,7 +4,12 @@
 
 Soccer in England is closer to a civic institution than a leisure activity. The Football Association, founded in London in 1863, is the oldest national governing body for the sport, and its early codification of the rules — separating "association football" from the rugby variants — is what gave the modern game its name and its global template. From mining villages in the North East to dockyards on Merseyside, local clubs were folded into the rhythm of working-class weekly life long before they were broadcast entertainment.
 
-That civic role has endured. Match attendance, kit-wearing in the street, and the use of club identity as shorthand for hometown loyalty are still routine across the country, and matchday rituals — pub-to-stadium walks, chants, and post-match analysis on local radio — continue to function as a shared cultural script that crosses class and generation. England registers more clubs than any other country — well over 40,000 — and is home to both the world's first organised league and its oldest national knockout competition, the FA Cup.
+That civic role has endured. Match attendance, kit-wearing in the street, and the use of club identity as shorthand for hometown loyalty are still routine across the country, and match-day rituals:
+
+- Pub-to-stadium walks, and chants
+- Post-match analysis on local radio
+
+These rituals continue to function as a shared cultural script that crosses class and generation. Each year, England registers more clubs than any other country with nearly 40,000 clubs annually. Lastly, England is home to both the world's first organized league and its oldest national knockout competition, the FA Cup.
 
 ![A capacity crowd watches a match at a modern English stadium](static/images/english-football-modern-match.png)
 
