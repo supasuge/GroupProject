@@ -10,3 +10,5 @@ dist/
 .vscode/
 __pycache__
 dist
+CLAUDE.md
+.claude/

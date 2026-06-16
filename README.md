@@ -16,13 +16,15 @@ The project is intentionally a four-page content site rather than an application
 |---|---|
 | `CLAUDE.md` | Original implementation specification (kept for reference). |
 | `README.md` | This file. |
+| `docs/` | Project artifacts kept out of the build: the source `.docx`, the content-curation log (`REPORT.md`), and the downloadable image bundle. |
 | `site_config.py` | Site metadata, page order, navigation labels, page descriptions. |
 | `tiny_markdown.py` | Defensive, allow-listed Markdown → HTML converter. Returns rendered HTML, a list of headings (for the table of contents), and the page title extracted from the first `#` heading. |
+| `academic_citations.py` | Dependency-free APA-style citation helper. Holds the project's source registry and renders parenthetical/narrative in-text citations and a sorted reference list. Run it directly (`python academic_citations.py`) to print every formatted reference. |
 | `app.py` | Flask preview server. Loads and parses every Markdown page once at startup; serves them via extensionless routes. |
 | `build_static.py` | Static site builder. Clears and rebuilds `dist/`, copies `static/` into it, and renders one HTML file per page using the same Jinja template Flask uses. |
 | `templates/base.html` | Single page template, used by both `app.py` and `build_static.py`. |
 | `static/mu.css` | All site styling — mobile-first, no JS, no frameworks. |
-| `static/images/` | Local images. Every image used in the site must be cited in `content/sources.md`. |
+| `static/images/` | Local images. The site ships an archival photo set of Manchester United and English football history; every image is credited in `content/sources.md`. |
 | `content/*.md` | Source content for every page on the site. |
 | `requirements.txt` | Python dependencies: Flask and MarkupSafe. |
 | `Dockerfile` | Multi-stage container (pinned Ubuntu LTS) that builds **and serves** the static site, with redundant volume handling. |
@@ -219,7 +221,7 @@ Image rules enforced by the Markdown converter:
 
 - **Evan Pardon** — site scaffold, *Soccer in England* page, political landscape, economic structures, fan culture and traditions, media representation, draft/transfer milestones.
 - **Jared Ekstrom** — historical development, founding and early history, legendary or influential players, stadium history and significance.
-- **SavorySheikah** — World Cup connections, fan base and supporter culture, political or social events connected to the team, contributions to national or global soccer culture, regional and ethnic identities.
+- **Lillian Halliburton** — World Cup connections, fan base and supporter culture, political or social events connected to the team, contributions to national or global soccer culture, regional and ethnic identities.
 
 ---
 

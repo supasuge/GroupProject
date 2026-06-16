@@ -2,21 +2,41 @@
 
 ## Founding and Early History
 
-Manchester United began life in 1878 as Newton Heath LYR Football Club, formed by workers of the Lancashire and Yorkshire Railway's carriage and wagon department in east Manchester. For two decades the club operated as a small works side, joining the Football League in 1892 but struggling financially throughout the 1890s. By 1902 Newton Heath was on the verge of insolvency; the club was saved by a small group of investors led by local brewer John Henry Davies, who paid off the debts, took control, and renamed the club Manchester United Football Club. The change of name and ownership in 1902 is the origin point most often used in official club histories.
+Manchester United began life in 1878 as Newton Heath LYR Football Club, formed by workers of the Lancashire and Yorkshire Railway's carriage and wagon department in east Manchester. For two decades the club operated as a small works side, joining the Football League in 1892 but struggling financially throughout the 1890s. By 1902 Newton Heath was on the verge of insolvency; the club was saved by a small group of investors led by local brewer John Henry Davies, who paid off the debts, took control, and renamed the club Manchester United Football Club. The investors reportedly weighed other names — including Manchester Central and Manchester Celtic — before settling on Manchester United, and the change of name and ownership in 1902 is the origin point most often used in official club histories.
 
-The first decade under the new name produced the club's first major silverware. Manchester United won its first First Division title in 1907–08 and the FA Cup in 1909, both under manager Ernest Mangnall, establishing the club as a competitive top-flight side and creating the supporter base that would underpin the move to Old Trafford the following year.
+![The Newton Heath LYR crest, marking the club's 1878 founding by workers of the Lancashire and Yorkshire Railway](static/images/newton-heath-crest.png)
+
+![Newton Heath players pose for a club photograph during the railway-works era, before the 1902 renaming](static/images/newton-heath-team.png)
+
+The first decade under the new name produced the club's first major silverware. The signing of winger Billy Meredith, the "Welsh Wizard," helped turn United into a genuine force: the club won its first First Division title in 1907–08 and the FA Cup in 1909, both under manager Ernest Mangnall, establishing it as a competitive top-flight side and creating the supporter base that would underpin the move to Old Trafford the following year.
+
+![The Manchester United squad of the club's first golden era, around the 1908 league title and 1909 FA Cup](static/images/early-united-squad.png)
+
+The momentum did not hold. United drifted through the 1920s, and by the early 1930s the club was again close to bankruptcy until businessman James Gibson intervened in 1931, clearing the debts and steadying the club through the years leading up to the Second World War.
 
 ## Key or Pivotal Moments
 
 Three moments stand out in the modern history of the club. The first is the Munich air disaster of 6 February 1958, when British European Airways Flight 609 crashed on takeoff from Munich-Riem Airport carrying the "Busby Babes" — manager Matt Busby's young, post-war side — home from a European Cup tie. Twenty-three people died, including eight Manchester United players. The disaster shaped the club's identity for a generation and turned its rebuilding into a public, national project rather than a private sporting one.
 
+![Matt Busby's young "Busby Babes" line up before kickoff in front of a packed crowd](static/images/busby-babes-lineup.png)
+
+![Wreckage in the snow at Munich-Riem airport after the crash of 6 February 1958](static/images/munich-air-disaster-1958.png)
+
 The second is the 1968 European Cup final at Wembley, ten years after Munich, when Busby's rebuilt side became the first English club to win the European Cup, beating Benfica 4–1 in extra time. The third is the 1998–99 treble under Sir Alex Ferguson, when United won the Premier League, FA Cup, and UEFA Champions League in a single season — the only English club to have done so — capped by an injury-time comeback against Bayern Munich in the Champions League final in Barcelona.
+
+![The European Cup-winning squad of 1968 with manager Matt Busby and the trophy at Old Trafford](static/images/european-cup-squad-1968.png)
 
 ## Legendary or Influential Players
 
 The club's history is unusually dense with players who became cultural reference points. Sir Bobby Charlton, a Munich survivor, won the World Cup with England in 1966 and the European Cup with United in 1968, and remained a public face of the club until his death in 2023. George Best, the Belfast-born winger who joined the same 1960s side, became one of the first footballers in the world to be treated as a pop-culture celebrity, and his career is often used as a case study in how televised football reshaped the public image of the sport.
 
+![A Busby Babes–era Manchester United player photographed at Old Trafford in the 1950s](static/images/busby-babes-player.png)
+
+![Manager Sir Matt Busby, who built both the Busby Babes and the 1968 European Cup–winning side](static/images/matt-busby.png)
+
 In the Premier League era, Eric Cantona arrived in 1992 and is widely credited by Sir Alex Ferguson as the catalyst for the modern dynasty; Ryan Giggs, the only player to score in every Premier League season from its founding through 2014, set longevity records that may not be matched; and Cristiano Ronaldo's first spell at the club (2003–2009) established him as a Ballon d'Or winner and rewrote what a modern wide forward could be. The class-of-'92 academy graduates — Giggs, the Neville brothers, Paul Scholes, Nicky Butt, and David Beckham — are frequently held up as the high-water mark of the club's commitment to homegrown talent.
+
+![Manchester United players celebrate in the dressing room after a major win in the late 1960s](static/images/players-celebrate-dressing-room-1968.png)
 
 ## World Cup Connections
 
@@ -34,17 +54,31 @@ Manchester United's transfer history includes several fees that were world recor
 
 Old Trafford has been Manchester United's home since 1910, when the move from Bank Street in Clayton was financed by John Henry Davies. The original ground was designed by Scottish architect Archibald Leitch, whose work shaped many of the Edwardian-era English stadiums still recognisable today. Old Trafford was severely damaged by Luftwaffe bombing in March 1941 during the Manchester Blitz, and United played home fixtures at Manchester City's Maine Road for several seasons while the ground was rebuilt; it reopened in 1949.
 
+![An early aerial view of Old Trafford, which opened in 1910 to a design by Scottish architect Archibald Leitch](static/images/old-trafford-aerial-early.png)
+
+![Old Trafford's main stand reduced to rubble after the March 1941 bombing of the ground during the Manchester Blitz](static/images/old-trafford-bombed-1941.png)
+
 The stadium has been progressively expanded since the 1990s and currently holds roughly 74,000 spectators, making it the largest club football ground in the United Kingdom. Its nickname, the "Theatre of Dreams," is widely attributed to Bobby Charlton and has become part of the club's branding. Plans for either major redevelopment or replacement of the ground have been a recurring subject of debate among ownership, supporters, and city government in recent years.
 
 ## Fan Base and Supporter Culture
 
 Manchester United’s history and achievements have created long lasting worldwide appeal for the club. Their brand is truly international, with a fanbase that has spilled out of the United Kingdom and across all seven continents. Globally, over two hundred Supporters Clubs, officially licensed by the team, create third places where local fans can consolidate their support. Being one of the most popular football clubs in the world, keeping the Reds’ mainstream fanbase engaged and connected to their club is a large deal for the establishment. Starting with the 2024 season, the club’s owners set out what they called a “Fan Engagement Plan” made to take into account the opinions of Manchester United’s global fanbase, reward them for their continued support, and improve avenues for them to interact with the Reds.
 
+![Huge crowds greet the team at a Manchester railway station in the club's early decades](static/images/railway-station-homecoming.png)
+
+![Supporters pack Albert Square outside Manchester Town Hall for the 1968 European Cup homecoming](static/images/albert-square-homecoming-1968.png)
+
+![The 1968 European Cup victory parade winds through Manchester on an open-top bus](static/images/european-cup-parade-1968.png)
+
 That widespread appeal has also allowed for fans to become large political actors. Following the Glazer takeover of Man Utd. in 2005, protests against the leveraging eventually led to the creation of a splinter football club, FC United of Manchester. Conceptualized as being “by fans, for fans”, FC United prides itself on being inclusive to all, governed by people who truly care about and understand the football community rather than distant corporate executives.
 
 ## Political or Social Events Connected to the Team
 
-Several moments in the club's history have spilled beyond sport. The Munich air disaster of 1958 became a national event, with funerals broadcast on television and the rebuilding of the team treated in the British press as a recovery story for the country. The 2005 Glazer takeover, financed by loans secured against the club's own assets, made Manchester United a focal point in a broader public argument about leveraged ownership of English football clubs, and the protests it generated have continued in different forms ever since — most recently in the lead-up to and after the failed European Super League proposal of April 2021, in which United was one of the founding "big six" English clubs.
+The club has been touched directly by national crises since its earliest decades. When the First World War suspended the Football League, United were caught up in a 1915 match-fixing scandal that brought bans for several players; one of them, Sandy Turnbull — a scorer in the 1909 FA Cup final — enlisted and was killed in action in France in 1917.
+
+![A wartime-era Manchester United squad photographed around the First World War](static/images/united-squad-ww1-era.png)
+
+Several later moments in the club's history have also spilled beyond sport. The Munich air disaster of 1958 became a national event, with funerals broadcast on television and the rebuilding of the team treated in the British press as a recovery story for the country. The 2005 Glazer takeover, financed by loans secured against the club's own assets, made Manchester United a focal point in a broader public argument about leveraged ownership of English football clubs, and the protests it generated have continued in different forms ever since — most recently in the lead-up to and after the failed European Super League proposal of April 2021, in which United was one of the founding "big six" English clubs.
 
 Players associated with the club have also become political figures in their own right. Marcus Rashford's 2020 campaign for free school meals during the COVID-19 pandemic forced two reversals of UK government policy and is now a standard case study in player activism in British sport.
 

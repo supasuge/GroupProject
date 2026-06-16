@@ -17,6 +17,9 @@ This page lists the references used across the exhibit. Citations are grouped by
 - UK Parliament Library briefing, "Independent Regulator for English Football" (Football Governance Bill). [https://commonslibrary.parliament.uk/research-briefings/cbp-9686/](https://commonslibrary.parliament.uk/research-briefings/cbp-9686/)
 - Kick It Out, organisational background. [https://www.kickitout.org/about](https://www.kickitout.org/about)
 - Hillsborough Independent Panel, full report (2012). [https://www.gov.uk/government/publications/hillsborough-independent-panel-disclosed-material-and-report](https://www.gov.uk/government/publications/hillsborough-independent-panel-disclosed-material-and-report)
+- Bandura et al. (2023), "Alcohol consumption among UK football supporters: Investigating the contested field of the football carnivalesque," *Drugs: Education, Prevention and Policy*. [https://www.tandfonline.com/doi/full/10.1080/09687637.2023.2219370](https://www.tandfonline.com/doi/full/10.1080/09687637.2023.2219370)
+- Gary Armstrong, *Football Hooligans: Knowing the Score* (Berg, 1998).
+- Wikipedia, "Football in England." [https://en.wikipedia.org/wiki/Football_in_England](https://en.wikipedia.org/wiki/Football_in_England)
 
 ## Stadium and Supporter Culture
 
@@ -28,6 +31,30 @@ This page lists the references used across the exhibit. Citations are grouped by
 
 ## Images and Media
 
-No images are currently embedded in the live site. When images are added they will be listed here with filename, source, photographer or rights-holder, license, and the page on which they appear. The recommended format is:
+The historical photographs below were compiled in the group's shared project document. They are archival images of Manchester United and English football, most dating to the early and mid-twentieth century. Original photographers and rights-holders have not yet been individually confirmed; **licensing should be verified before any public deployment** of the site. They are reproduced here for a non-commercial class exhibit.
 
-- `static/images/example.jpg` — short description. Source: [link]. Photographer/owner: name. License: e.g. CC BY 2.0. Used on: page name.
+### Manchester United history page
+
+- `static/images/newton-heath-crest.png` — the Newton Heath LYR crest (1878 founding). Used in: Founding and Early History.
+- `static/images/newton-heath-team.png` — Newton Heath players in the railway-works era. Used in: Founding and Early History.
+- `static/images/early-united-squad.png` — Manchester United squad around the 1908 title and 1909 FA Cup. Used in: Founding and Early History.
+- `static/images/busby-babes-lineup.png` — the "Busby Babes" lining up before kickoff. Used in: Key or Pivotal Moments.
+- `static/images/munich-air-disaster-1958.png` — wreckage at Munich-Riem airport, 6 February 1958. Used in: Key or Pivotal Moments.
+- `static/images/european-cup-squad-1968.png` — the 1968 European Cup–winning squad with Matt Busby. Used in: Key or Pivotal Moments.
+- `static/images/busby-babes-player.png` — a Busby Babes–era player at Old Trafford. Used in: Legendary or Influential Players.
+- `static/images/matt-busby.png` — manager Sir Matt Busby. Used in: Legendary or Influential Players.
+- `static/images/players-celebrate-dressing-room-1968.png` — players celebrating in the dressing room, late 1960s. Used in: Legendary or Influential Players.
+- `static/images/old-trafford-aerial-early.png` — early aerial view of Old Trafford (opened 1910). Used in: Stadium History and Significance.
+- `static/images/old-trafford-bombed-1941.png` — Old Trafford after the March 1941 bombing. Used in: Stadium History and Significance.
+- `static/images/railway-station-homecoming.png` — crowds greeting the team at a Manchester railway station, early decades. Used in: Fan Base and Supporter Culture.
+- `static/images/albert-square-homecoming-1968.png` — supporters in Albert Square for the 1968 European Cup homecoming. Used in: Fan Base and Supporter Culture.
+- `static/images/european-cup-parade-1968.png` — the 1968 European Cup victory bus parade. Used in: Fan Base and Supporter Culture.
+- `static/images/united-squad-ww1-era.png` — a wartime-era squad, around the First World War. Used in: Political or Social Events Connected to the Team.
+
+### Soccer in England page
+
+- `static/images/english-football-modern-match.png` — a capacity crowd at a modern English stadium. Used in: Social and Cultural Life.
+
+### Available but not currently shown
+
+- `static/images/united-squad-1920s.png` — a 1920s squad photograph, included in the image set but left out of the live pages.
