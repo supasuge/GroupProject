@@ -8,8 +8,8 @@
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0c0c0e">
 
-  <link rel="icon" href="{{ asset_url('generated/favicon.svg') }}" type="image/svg+xml">
   <link rel="icon" href="{{ asset_url('generated/favicon.ico') }}" sizes="any">
+  <link rel="icon" href="{{ asset_url('generated/favicon-32.png') }}" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="{{ asset_url('generated/apple-touch-icon.png') }}">
 
   <meta property="og:title" content="{{ page.title }} | {{ site_title }}">
@@ -28,7 +28,7 @@
     <nav class="nav container" aria-label="Primary navigation">
       <a class="brand" href="{{ page_url('home') }}" aria-label="Manchester United Project — home">
         <span class="brand-mark" aria-hidden="true">
-          <span class="brand-mark-inner">MU</span>
+          <img src="{{ asset_url('generated/site-logo.png') }}" alt="" width="252" height="78">
         </span>
         <span class="brand-wordmark">
           <span class="brand-eyebrow">Soccer Culture Project</span>

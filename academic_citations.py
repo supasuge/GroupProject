@@ -87,7 +87,8 @@ class AcademicSource:
 def _format_authors(authors: tuple[str, ...]) -> str:
     if not authors:
         return "Unknown author."
-    return ", ".join(authors) + "."
+    author_text = ", ".join(authors)
+    return author_text if author_text.endswith(".") else f"{author_text}."
 
 
 def _sentence_case_title(title: str) -> str:
@@ -169,6 +170,16 @@ SOURCES: dict[str, AcademicSource] = {
         site_or_journal="Manchester United Investor Relations",
         url="https://ir.manutd.com/company-information/history.aspx",
     ),
+    "manutd_homepage": AcademicSource(
+        key="manutd_homepage",
+        authors=("Manchester United",),
+        year="n.d.",
+        title="Official Manchester United website",
+        source_type=SourceType.WEBPAGE,
+        site_or_journal="Manchester United Football Club",
+        url="https://www.manutd.com/en",
+        retrieval_date="June 17, 2026",
+    ),
     # --- Sources cited in the group project document ---
     "bandura2023": AcademicSource(
         key="bandura2023",
@@ -176,7 +187,7 @@ SOURCES: dict[str, AcademicSource] = {
         year="2023",
         title="Alcohol consumption among UK football supporters: Investigating the contested field of the football carnivalesque",
         source_type=SourceType.JOURNAL,
-        site_or_journal="Drugs: Education, Prevention and Policy",
+        site_or_journal="Drugs: Education, Prevention and Policy, 2024, v. 31",
         url="https://www.tandfonline.com/doi/full/10.1080/09687637.2023.2219370",
     ),
     "armstrong1998": AcademicSource(
@@ -205,6 +216,24 @@ SOURCES: dict[str, AcademicSource] = {
         source_type=SourceType.WEBPAGE,
         site_or_journal="Manchester United Football Club",
         url="https://www.manutd.com/en/news/club-history",
+    ),
+    "britannica_manutd": AcademicSource(
+        key="britannica_manutd",
+        authors=("Gifford, C.",),
+        year="2026",
+        title="Manchester United",
+        source_type=SourceType.WEBPAGE,
+        site_or_journal="Encyclopaedia Britannica",
+        url="https://www.britannica.com/topic/Manchester-United",
+    ),
+    "men_iconic_manutd_photos": AcademicSource(
+        key="men_iconic_manutd_photos",
+        authors=("Manchester Evening News",),
+        year="n.d.",
+        title="100 iconic Manchester United pictures",
+        source_type=SourceType.WEBPAGE,
+        site_or_journal="Manchester Evening News",
+        url="https://www.manchestereveningnews.co.uk/sport/football/football-news/gallery/100-iconic-manchester-united-pictures-4869374",
     ),
     "premierleague_history": AcademicSource(
         key="premierleague_history",
@@ -326,12 +355,30 @@ SOURCES: dict[str, AcademicSource] = {
     ),
     "sportscroll_protest": AcademicSource(
         key="sportscroll_protest",
-        authors=("Sport Scroll",),
-        year="n.d.",
-        title="Manchester United's history of protest: Fans, ownership, identity",
+        authors=("Mitchell, S.",),
+        year="2026",
+        title="Manchester United's History of Protest: Fans, Ownership, Identity",
         source_type=SourceType.WEBPAGE,
         site_or_journal="Sport Scroll",
         url="https://sportscroll.com/manchester-uniteds-long-legacy-of-protest-fans-ownership-and-the-fight-for-club-identity-ml3ak0ay",
+    ),
+    "sigodo2021": AcademicSource(
+        key="sigodo2021",
+        authors=("Sigodo, M.",),
+        year="2021",
+        title="Racism in Football: How Black coaches are tackling racism in the sport",
+        source_type=SourceType.WEBPAGE,
+        site_or_journal="MyLondon",
+        url="https://www.mylondon.news/news/uk-world-news/diversity-british-football-still-lacking-21819248",
+    ),
+    "hamil2008": AcademicSource(
+        key="hamil2008",
+        authors=("Hamil, S.",),
+        year="2008",
+        title="Case 9 - Manchester United: the commercial development of a global football brand",
+        source_type=SourceType.JOURNAL,
+        site_or_journal="ScienceDirect",
+        url="https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780750685436500147?via%3Dihub",
     ),
 }
 

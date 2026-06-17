@@ -190,19 +190,19 @@ em { color: var(--mu-gold-soft); font-style: italic; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 8rem;
+  height: 2.5rem;
   border-radius: 8px;
-  background: linear-gradient(160deg, var(--mu-red-bright), var(--mu-red) 55%, var(--mu-red-deep));
-  box-shadow: inset 0 0 0 1px rgba(240, 192, 64, 0.35);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 0 0 1px rgba(240, 192, 64, 0.28);
   flex-shrink: 0;
+  overflow: hidden;
 }
-.brand-mark-inner {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.92rem;
-  letter-spacing: 0.02em;
-  color: var(--mu-gold-soft);
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.12rem;
 }
 
 .brand-wordmark {
@@ -681,7 +681,6 @@ letter-spacing: normal;  margin: 2rem 0 0.5rem;
    Generated local asset hooks
    ------------------------------------------------------------------------- */
 
-.brand-mark,
 .footer-mark {
   background-image: url("generated/site-mark.svg");
   background-size: cover;
@@ -689,7 +688,6 @@ letter-spacing: normal;  margin: 2rem 0 0.5rem;
   color: transparent;
 }
 
-.brand-mark-inner,
 .footer-mark {
   text-indent: -999px;
   overflow: hidden;

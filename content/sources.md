@@ -4,11 +4,16 @@ This page lists the references used across the exhibit. Citations are grouped by
 
 ## Manchester United History
 
+- Manchester United Football Club, official website. [https://www.manutd.com/en](https://www.manutd.com/en)
+- Manchester United Investor Relations, "History." [https://ir.manutd.com/company-information/history.aspx](https://ir.manutd.com/company-information/history.aspx)
 - Manchester United Football Club, official club history. [https://www.manutd.com/en/news/club-history](https://www.manutd.com/en/news/club-history)
+- Clive Gifford, "Manchester United," *Encyclopaedia Britannica* (updated 2026). [https://www.britannica.com/topic/Manchester-United](https://www.britannica.com/topic/Manchester-United)
 - Premier League historical records and statistics. [https://www.premierleague.com/history](https://www.premierleague.com/history)
 - UEFA Champions League archive, 1968 final report. [https://www.uefa.com/uefachampionsleague/history/](https://www.uefa.com/uefachampionsleague/history/)
 - BBC News obituary archive, "Sir Bobby Charlton: Manchester United and England great dies aged 86" (2023). [https://www.bbc.com/news/uk-67166953](https://www.bbc.com/news/uk-67166953)
 - The Guardian, archive coverage of the 2005 Glazer takeover and the 2021 European Super League proposals. [https://www.theguardian.com/football/manchester-united](https://www.theguardian.com/football/manchester-united)
+- Manchester Evening News, "100 iconic Manchester United pictures." [https://www.manchestereveningnews.co.uk/sport/football/football-news/gallery/100-iconic-manchester-united-pictures-4869374](https://www.manchestereveningnews.co.uk/sport/football/football-news/gallery/100-iconic-manchester-united-pictures-4869374)
+- Sean Hamil, "Case 9 - Manchester United: the commercial development of a global football brand" (2008). [https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780750685436500147?via%3Dihub](https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780750685436500147?via%3Dihub)
 
 ## English Soccer and Culture
 
@@ -19,6 +24,7 @@ This page lists the references used across the exhibit. Citations are grouped by
 - Hillsborough Independent Panel, full report (2012). [https://www.gov.uk/government/publications/hillsborough-independent-panel-disclosed-material-and-report](https://www.gov.uk/government/publications/hillsborough-independent-panel-disclosed-material-and-report)
 - Bandura et al. (2023), "Alcohol consumption among UK football supporters: Investigating the contested field of the football carnivalesque," *Drugs: Education, Prevention and Policy*. [https://www.tandfonline.com/doi/full/10.1080/09687637.2023.2219370](https://www.tandfonline.com/doi/full/10.1080/09687637.2023.2219370)
 - Gary Armstrong, *Football Hooligans: Knowing the Score* (Berg, 1998).
+- Melissa Sigodo (2021), "Why diversity in British football is still lacking and how London Black coaches are tackling racism in the sport," *MyLondon*. [https://www.mylondon.news/news/uk-world-news/diversity-british-football-still-lacking-21819248](https://www.mylondon.news/news/uk-world-news/diversity-british-football-still-lacking-21819248)
 - Wikipedia, "Football in England." [https://en.wikipedia.org/wiki/Football_in_England](https://en.wikipedia.org/wiki/Football_in_England)
 
 ## Stadium and Supporter Culture
@@ -27,7 +33,7 @@ This page lists the references used across the exhibit. Citations are grouped by
 - Manchester United Supporters' Trust (MUST), about and campaign history. [https://joinmust.org/](https://joinmust.org/)
 - FC United of Manchester, club history. [https://www.fc-utd.co.uk/about](https://www.fc-utd.co.uk/about)
 - BBC Sport, "Marcus Rashford: Free school meals campaign timeline." [https://www.bbc.com/sport/football/54693692](https://www.bbc.com/sport/football/54693692)
-- Sport Scroll, "Manchester United's History of Protest: Fans, Ownership, Identity" [https://sportscroll.com/manchester-uniteds-long-legacy-of-protest-fans-ownership-and-the-fight-for-club-identity-ml3ak0ay](https://sportscroll.com/manchester-uniteds-long-legacy-of-protest-fans-ownership-and-the-fight-for-club-identity-ml3ak0ay)
+- Sarah Mitchell (2026), "Manchester United's Long Legacy of Protest: Fans, Ownership, and the Fight for Club Identity," *Sport Scroll*. [https://sportscroll.com/manchester-uniteds-long-legacy-of-protest-fans-ownership-and-the-fight-for-club-identity-ml3ak0ay](https://sportscroll.com/manchester-uniteds-long-legacy-of-protest-fans-ownership-and-the-fight-for-club-identity-ml3ak0ay)
 
 ## Images and Media
 
@@ -58,3 +64,7 @@ The historical photographs below were compiled in the group's shared project doc
 ### Available but not currently shown
 
 - `static/images/united-squad-1920s.png` — a 1920s squad photograph, included in the image set but left out of the live pages.
+
+### Project branding
+
+- `static/generated/site-logo.png`, favicon PNGs, `favicon.ico`, and `apple-touch-icon.png` — redrawn and resized from the project logo supplied at `/home/supasuge/Pictures/ManUtdProjectLogo.png`.
