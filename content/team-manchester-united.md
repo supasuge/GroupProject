@@ -36,6 +36,8 @@ The second is the 1968 European Cup final at Wembley, ten years after Munich, wh
 
 ![The European Cup-winning squad of 1968 with manager Matt Busby and the trophy at Old Trafford](static/images/european-cup-squad-1968.png)
 
+![1992 Academy Graduates with sir Alex Ferguson](static/images/influential-players.png)
+
 ## Legendary or Influential Players
 
 Manchester United is known for having the first real football superstart, George Best. He was signed to the team in 1962, and soon became on of England's celebrities for his tenacious play on the pitch and antics off it. He, along with the partners of his 'Trinity', Law and Charlton had immense initial success. With an interlude of unsatisfactory performance, the team once again became League Champions and won the European Cup at Wembly against Benifica. George Best was awarded the Ballon d’Or for his performance. Around 250,000 fans greeted the team upon their return from the european victory. With this monumental achievement, Sir Matt Busby was knighted, and retired after another season in 1969.
@@ -48,7 +50,7 @@ The club's history is unusually dense with players who became cultural reference
 
 In the Premier League era, Eric Cantona arrived in 1992 and is widely credited by Sir Alex Ferguson as the catalyst for the modern dynasty; Ryan Giggs, the only player to score in every Premier League season from its founding through 2014, set longevity records that may not be matched; and Cristiano Ronaldo's first spell at the club (2003–2009) established him as a Ballon d'Or winner and rewrote what a modern wide forward could be. The class-of-'92 academy graduates — Giggs, the Neville brothers, Paul Scholes, Nicky Butt, and David Beckham — are frequently held up as the high-water mark of the club's commitment to homegrown talent.
 
-![Manchester United players celebrate in the dressing room after a major win in the late 1960s](static/images/players-celebrate-dressing-room-1968.png)
+![Alex Ferguson and Peter Schmeichel lift the European Cup in 1999](static/images/influential-players2.png)
 
 ## World Cup Connections
 
